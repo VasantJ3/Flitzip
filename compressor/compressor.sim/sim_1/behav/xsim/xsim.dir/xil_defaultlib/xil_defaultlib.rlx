@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/FPGA/projects/Flitzip/2by1Mux.v,1638189283,verilog,,D:/FPGA/projects/Flitzip/min_max.v,,MUX_2_1,,,,,,,,
+D:/FPGA/projects/Flitzip/compressor.v,1639762190,verilog,,,,compressor,,,,,,,,
+D:/FPGA/projects/Flitzip/compressor/compressor.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/FPGA/projects/Flitzip/min_max.v,1639762255,verilog,,D:/FPGA/projects/Flitzip/prio_encoder.v,,min_max,,,,,,,,
+D:/FPGA/projects/Flitzip/prio_encoder.v,1638303329,verilog,,D:/FPGA/projects/Flitzip/small_comb.v,,priority_encoder,,,,,,,,
+D:/FPGA/projects/Flitzip/small_comb.v,1638303439,verilog,,D:/FPGA/projects/Flitzip/subtractor.v,,small_comb,,,,,,,,
+D:/FPGA/projects/Flitzip/subtractor.v,1638303706,verilog,,D:/FPGA/projects/Flitzip/compressor.v,,subtractor,,,,,,,,
