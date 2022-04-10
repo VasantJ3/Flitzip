@@ -40,11 +40,10 @@ module minmax #(
         for(i=0;i < 4; i=i+2) begin : third_level
 
             comp_max max (
-                         .in_a(intconns_max[(i/2) + 8]),
-                         .in_b(intconns_max[((i/2) + 8) + 1]),
+                         .in_a(intconns_max[i+8]),
+                         .in_b(intconns_max[(i + 8) + 1]),
                          .data_out(intconns_max[(i/2) + 12])
                      );
-
         end
 
     endgenerate
@@ -52,9 +51,10 @@ module minmax #(
     generate
         for(i=0;i < 2; i=i+2) begin : fourth_level
 
-            comp_max max (
-                         .in_a(intconns_max[(i/2) + 12]),
-                         .in_b(intconns_max[((i/2) + 12) + 1]),
+            comp_max max 
+                     (
+                         .in_a(intconns_max[i + 12]),
+                         .in_b(intconns_max[(i+ 12) + 1]),
                          .data_out(max_data)
                      );
         end
@@ -88,8 +88,8 @@ module minmax #(
         for(i=0;i < 4; i=i+2) begin
 
             comp_min min (
-                         .in_a(intconns_min[(i/2) + 8]),
-                         .in_b(intconns_min[((i/2) + 8) + 1]),
+                         .in_a(intconns_min[i + 8]),
+                         .in_b(intconns_min[(i + 8) + 1]),
                          .data_out(intconns_min[(i/2) + 12])
                      );
 
@@ -101,8 +101,8 @@ module minmax #(
         for(i=0;i < 2; i=i+2) begin
 
             comp_min min (
-                         .in_a(intconns_min[(i/2) + 12]),
-                         .in_b(intconns_min[((i/2) + 12) + 1]),
+                         .in_a(intconns_min[i + 12]),
+                    .in_b(intconns_min[(i + 12) + 1]),
                          .data_out(min_data)
                      );
         end
